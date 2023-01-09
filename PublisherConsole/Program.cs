@@ -224,6 +224,10 @@ Script-Migration
 - generate scripts from a determined migration:
 Script-Migration initial_migration
 
+- after renaming Author Id primary key to AuthorId:
+add-migration authoridchange
 
+- In order to apply changes to database:
+Update-Database
 
  */
