@@ -28,3 +28,5 @@ C:\datos\formacion\ef course\ef6fundamentals\PublisherData\obj\Debug\net6.0\Publ
 C:\datos\formacion\ef course\ef6fundamentals\PublisherData\obj\Debug\net6.0\refint\PublisherData.dll
 C:\datos\formacion\ef course\ef6fundamentals\PublisherData\obj\Debug\net6.0\PublisherData.pdb
 C:\datos\formacion\ef course\ef6fundamentals\PublisherData\obj\Debug\net6.0\ref\PublisherData.dll
+C:\datos\formacion\ef course\ef6fundamentals\PublisherData\bin\Debug\net6.0\PublisherData.runtimeconfig.json
+C:\datos\formacion\ef course\ef6fundamentals\PublisherData\obj\Debug\net6.0\PublisherData.genruntimeconfig.cache

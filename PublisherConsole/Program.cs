@@ -142,7 +142,7 @@ void QueryAggregate()
 
 void RetrieveAndUpdateActor()
 {
-    var author = _context.Authors.FirstOrDefault(a => a.Id == 10);
+    var author = _context.Authors.FirstOrDefault(a => a.AuthorId == 10);
     if(author != null)
     {
         author.FirstName += "*";
@@ -158,7 +158,7 @@ void RetrieveAndUpdateActor()
 void RetrieveAndUpdateActorAsNotrackingFails()
 {
     //Marked as no tracking,DBContext wont save the changes
-    var author = _context.Authors.AsNoTracking().FirstOrDefault(a => a.Id == 10);
+    var author = _context.Authors.AsNoTracking().FirstOrDefault(a => a.AuthorId == 10);
     if (author != null)
     {
         author.FirstName += "+";
