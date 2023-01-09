@@ -46,6 +46,13 @@ namespace PublisherData
 
             };
             modelBuilder.Entity<Book>().HasData(someBooks);
+
+            //Example of declare Onte to Many relationship and mapping FK names
+            //For example, AuthorFK instead of AuthorId
+            //modelBuilder.Entity<Author>()
+            //    .HasMany(a => a.Books)
+            //    .WithOne(b => b.Author)
+            //    .HasForeignKey(b => b.AuthorFK);
         }
     }
 }
