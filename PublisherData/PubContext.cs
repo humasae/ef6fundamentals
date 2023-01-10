@@ -1,4 +1,5 @@
 ﻿using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.Logging;
 using PublisherDomain;
 
 namespace PublisherData
@@ -12,7 +13,9 @@ namespace PublisherData
         {
             optionsBuilder.UseSqlServer(
                 "Data Source = (localdb)\\MSSQLLocalDB; Initial Catalog = PubDatabase"
-            );
+            // ).LogTo(Console.WriteLine); --> All logs
+            //.EnableSensitiveDataLogging() --> to see sensitive data, as params in queries
+            ).LogTo(Console.WriteLine, new[] { DbLoggerCategory.Database.Command.Name }, LogLevel.Information);
         }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
